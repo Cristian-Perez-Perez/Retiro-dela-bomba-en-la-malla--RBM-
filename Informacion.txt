@@ -1,0 +1,22 @@
+HEURÍSTICAS
+
+-La heurística glotona sólo se ejecuta una vez ya que es determinista y no admite técticas multiarranque.
+-La heurística de grupos y las metaheurísticas de ascenso en la montaña y recocido simulado si admiten técnicas multiarranque, 
+para cambiar el número de veces que se ejecutan se debe cambiar el valor de la variable "corridas" (líneas 70, 106 y 106 respectivamente).
+-La heurística de grupos puede cambiar el valor de "n_grup" (línea 52) para modificar la cantidad de grupos a formar en el algoritmo.
+-La metaheurística de recocido simulado puede cambiar el valor de la temperatura inicial y el criterio de parada (líneas 143 y 144) 
+y, el valor de "alpha" (línea 188) utilizado para el equema de enfriamiento.
+
+En los algoritmos que admiten técnicas multiarranque se reporta el valor promedio, máximo, mínimo, y desviación estándar
+de la función objetivo (F.O.), además del tiempo total y promedio en segundos para las ejecuciones.
+En la heurística glotona solamente se reporta el valor de la F.O. y el tiempo de ejecución.
+
+Para cada ejecución en los algoritmos se reporta la secuencia de robots que componen la solución, las coordenadas por las que pasa la bomba 
+y el valor de la F.O.
+
+INSTANCIAS
+
+El nombre de cada instancia inicia con la letra R, seguida de un número que indica la cantidad de todos que hay en la instancia, un _ y dos letras que indican lo siguiente:
+-AL: Todos los robots están ubicados en diferentes posiciones de la malla con diferentes cantidades de energía.
+-ME: Todos los robots están ubicados en diferentes posiciones de la malla con la misma cantidad de energía.
+-MP: Todos los robots están ubicados en la misma posición de la malla con diferentes cantidades de energía.
