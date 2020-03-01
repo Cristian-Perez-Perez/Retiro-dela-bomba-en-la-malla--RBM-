@@ -17,6 +17,10 @@ y el valor de la F.O.
 INSTANCIAS
 
 El nombre de cada instancia inicia con la letra R, seguida de un número que indica la cantidad de todos que hay en la instancia, un _ y dos letras que indican lo siguiente:
+
 -AL: Todos los robots están ubicados en diferentes posiciones de la malla con diferentes cantidades de energía.
 -ME: Todos los robots están ubicados en diferentes posiciones de la malla con la misma cantidad de energía.
 -MP: Todos los robots están ubicados en la misma posición de la malla con diferentes cantidades de energía.
+
+Los primeros tres números en cada instancia indican la cantidad de robots y las posición incicial de la bomba en los ejes "x & "y" respectivamente.
+Los siguientes números indican las coordenadas de cada robot en los ejex "x" & "y" y la cantidad de energía con la que cuenta respectivamente. 
